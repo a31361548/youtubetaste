@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+    }
+
+    #header {
+      height: 60px;
+      width: 100%;
+      background: lightblue;
+      position: fixed;
+    }
+
+    #header2 {
+      height: 45px;
+      width: calc(100% - 13%);
+      background: lightgrey;
+      top: 60px;
+      left: 13%;
+      position: fixed;
+    }
+
+    #sidebar {
+      height: calc(100vh - 60px);
+      background: lightcoral;
+      width: 13%;
+      position: fixed;
+      left: 0;
+      top: 60px;
+    }
+
+    #content {
+      width: calc(100% - 15%);
+      margin-left: 15%;
+      background: lightpink;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header"></div>
+  <div id="sidebar"></div>
+  <div id="header2"></div>
+  <div id="content">
+
+  </div>
+</body>
+
+</html>
