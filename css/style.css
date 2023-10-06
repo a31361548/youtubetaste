@@ -22,15 +22,16 @@
 	display: inline-block;
 	padding: 0.5rem 1rem;
 	font-size: 1rem;
-	transition: 0.5s;
 	border-radius: 7.5%;
 	background: rgb(236, 235, 235);
 	margin-left: 20px;
 }
 
-/* #header2 .head2menu li:hover {
-	margin: auto;
-} */
+#header2 .head2menu li:hover {
+	transition: 0.5s;
+	background: rgb(224, 223, 223);
+	cursor: pointer;
+}
 
 #sidebar {
 	height: calc(100vh - 60px);
@@ -44,23 +45,24 @@
 
 #sidebar .sidemenu ul {
 	list-style: none;
+	padding: 10%;
 }
 
 #sidebar .sidemenu li {
 	line-height: 2;
 	font-size: 16px;
 	color: black;
-	text-decoration: none;
+	/* text-decoration: none; */
 	display: block;
-	padding: 0.5rem 1.5rem;
+	padding: 4px 0;
 	transition: 0.1s;
 }
 
 #sidebar .sidemenu li:hover {
 	margin: auto;
-	width: 75%;
 	border-radius: 5%;
 	background: rgb(223, 219, 219);
+	cursor: pointer;
 }
 
 #sidebar .sidemenu h1 {
@@ -69,12 +71,46 @@
 	line-height: 2;
 }
 
-/* #sidebar .sidemenu > i {
+#sidebar .sidemenu h2 {
+	font-size: 16px;
+	padding: 0.5rem 1.5rem;
+	text-align: center;
+}
+
+#sidebar .sidemenu ul li > i {
 	width: 30px;
-	line-height: 3;
-	font-size: 1.3rem;
-	color: lightpink;
-} */
+	font-size: 1rem;
+	color: black;
+}
+
+#sidebar .sidemenu ul > img {
+	background: url(../yt-icon/live.png) no-repeat;
+	width: 30px;
+	height: 30px;
+	float: left;
+}
+
+.login {
+	width: 30%;
+	height: 20px;
+	padding: 4px 0;
+	border-radius: 20px;
+	text-align: center;
+	margin-left: 15%;
+	margin-bottom: 2%;
+	border: 1px solid rgb(149, 149, 245);
+}
+
+.login:hover {
+	width: 30%;
+	height: 20px;
+	padding: 4px 0;
+	border-radius: 20px;
+	margin-left: 15%;
+	margin-bottom: 2%;
+	background: rgb(220, 220, 243);
+	cursor: pointer;
+}
 
 #content {
 	width: calc(100% - 15%);
