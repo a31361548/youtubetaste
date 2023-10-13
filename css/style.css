@@ -27,6 +27,20 @@
 	top: 25%;
 }
 
+#header i {
+	padding-left: 2vh;
+	line-height: 2;
+	font-size: 30px;
+}
+
+#yttitle {
+	width: 110px;
+	height: 70px;
+	position: absolute;
+	left: 6vh;
+	background-size: cover;
+}
+
 .send {
 	width: 30px;
 	height: 30px;
