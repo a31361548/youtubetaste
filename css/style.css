@@ -10,13 +10,6 @@
 	position: fixed;
 }
 
-/* #header .searchbar {
-	width: 30vh;
-	height: 25px;
-	border-radius: 10px;
-	padding: 1px 2px;
-	background: lightblue;
-} */
 #header .search {
 	width: 50vh;
 	height: 35px;
@@ -24,29 +17,66 @@
 	border: 1px solid rgb(204, 198, 198);
 	border-radius: 20px 0 0 20px;
 	border-right: none;
-	left: calc(50% - 25vh);
+	left: calc(50% - 25vh - 20px);
 	top: 25%;
 }
 
 #header .send {
-	width: 30px;
+	width: 50px;
 	height: 35px;
-	left: calc(50% + 25vh);
+	left: calc(50% + 25vh - 20px);
 	top: 25%;
 	border: 1px solid rgb(204, 198, 198);
 	border-radius: 0 20px 20px 0;
 	/* border-left: none; */
 	transform-origin: left top;
 	position: absolute;
+	cursor: pointer;
 }
 
-#header :nth-child(1) {
+#header :nth-child(1) > i {
 	padding-left: 2vh;
 	line-height: 2;
 	font-size: 30px;
 }
 
+#micro {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background: rgb(248, 248, 248);
+	position: absolute;
+	top: 50%;
+	left: 65%;
+	transform: translate(-50%, -50%);
+}
+
+#micro:hover {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background: rgb(220, 220, 243);
+	cursor: pointer;
+}
+
 #header :nth-child(5) {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: calc(50% + 25vh);
+	top: 55%;
+}
+
+#header :nth-child(6) > i {
+	padding: 0;
+	line-height: 0;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	font-size: 1rem;
+}
+
+#header :nth-child(7) {
 	position: absolute;
 	top: 35%;
 	left: 90%;
@@ -58,12 +88,7 @@
 	height: 70px;
 	position: absolute;
 	left: 6vh;
-	background-size: cover;
-}
-
-.send img {
-	width: 10px;
-	height: 10px;
+	top: 0;
 }
 
 .point3 {
@@ -84,7 +109,7 @@
 	top: 20%;
 }
 
-#header :nth-child(6) > i {
+#header :nth-child(7) > i {
 	padding: 0;
 	line-height: 0;
 	color: rgb(62, 62, 236);
@@ -207,7 +232,20 @@
 }
 
 #content {
-	width: calc(100% - 15%);
-	margin-left: 15%;
-	background: lightpink;
+	width: calc(100% - 13%);
+	height: calc(100% - 105px);
+	left: 13%;
+	position: absolute;
+	top: 105px;
+	background-color: lightblue;
+	font-size: 0;
+}
+
+#content .box {
+	width: 18%;
+	height: 50px;
+	border: 1px solid black;
+	background: red;
+	display: inline-block;
+	padding: 1rem;
 }
