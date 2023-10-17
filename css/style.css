@@ -275,12 +275,25 @@
 	margin: 1rem 1rem 0.5rem 1rem;
 }
 
+.box:hover {
+	cursor: pointer;
+}
+
 .float-left {
 	width: 90%;
 	height: 60%;
 	margin: 3% 5%;
 	border-radius: 15px;
 	float: left;
+}
+
+.float-left:hover {
+	width: 90%;
+	height: 60%;
+	margin: 3% 5%;
+	border-radius: 0;
+	float: left;
+	cursor: pointer;
 }
 
 .catlogo {
@@ -291,8 +304,8 @@
 	float: left;
 }
 
-#content p {
-	font-size: 1rem;
+.box p {
+	font-size: 0.8rem;
 }
 
 .shorts {
@@ -310,8 +323,9 @@
 	border-radius: 15px;
 }
 
-.short-box p {
+.short-box > p {
 	font-family: '標楷體';
+	font-size: 1rem;
 }
 
 hr {
