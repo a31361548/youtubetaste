@@ -204,6 +204,12 @@
 	color: black;
 }
 
+.years {
+	padding: 0 1rem;
+	font-size: 14px;
+	color: rgb(189, 188, 188);
+}
+
 .login {
 	width: 30%;
 	height: 30px;
